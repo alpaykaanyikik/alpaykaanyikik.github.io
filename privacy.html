@@ -12,12 +12,13 @@
 </head>
 <body>
 <h1>CardKeep / KartKasa – Privacy Policy</h1>
-<p><small>Last updated: 2026-09-19</small></p>
+<p><small>Last updated: 2026-09-24</small></p>
 
 <p><strong>CardKeep</strong> (Turkish: KartKasa) is a 100% offline business card scanner. This policy explains what data the app processes and where it goes.</p>
 
 <h2>1. What data we collect</h2>
-<p><strong>None.</strong> CardKeep does not collect, transmit, store on any server, or share any personal or technical data. There is no account, no login, no analytics, no crash reporting, and no advertising SDK.</p>
+<p><strong>We collect nothing.</strong> CardKeep has no account, no login, no advertising SDK and no crash reporting. The developer operates no servers and never receives your data. Everything you scan or type stays on your device.</p>
+<p><strong>One exception you should know about.</strong> CardKeep uses Google ML Kit to read text from card images. The recognition itself runs on your device &mdash; card images and their contents are never uploaded. However, the ML Kit library sends anonymous usage and diagnostic information to Google (a device identifier and technical diagnostics, used for analytics). This is not linked to your identity and is not used to track you across apps. We disclose it because the library declares it, and we would rather be accurate than sound absolute.</p>
 
 <h2>2. What stays on your device</h2>
 <p>All information you enter or scan – card images, contact fields (name, title, company, phone, email, address, website, notes), projects/folders – is stored locally on your device only, inside the app's private storage. Nothing is uploaded.</p>
@@ -28,10 +29,10 @@
   <li><strong>Photos / Media</strong> – so you can import an existing card image from your gallery.</li>
   <li><strong>Contacts</strong> – only used if you tap "Add to Contacts" to save a scanned card to your phone's address book.</li>
 </ul>
-<p>The app makes no network calls. The Android INTERNET permission may appear in the manifest solely because Google Play Billing requires it for in-app purchases; the app code itself never contacts any external server.</p>
+<p>CardKeep itself contacts no server of ours &mdash; there is none. Network access is used only by components outside our control: the ML Kit text-recognition models are downloaded once on first use, ML Kit sends the anonymous diagnostics described in section 1, and the App Store / Google Play handle in-app purchases. The Android INTERNET permission exists for these reasons only.</p>
 
 <h2>4. In-app purchases</h2>
-<p>Purchases (Pro and Lifetime unlocks) are processed by the Google Play Store / Apple App Store. We do not receive your payment details. The purchase state is stored locally on your device and can be restored via the Restore button.</p>
+<p>The one-time Pro unlock is processed by the Apple App Store or Google Play. We never receive your payment details. The purchase state is stored locally on your device and can be restored with the Restore Purchases button.</p>
 
 <h2>5. Children</h2>
 <p>CardKeep is a general productivity tool and is not directed at children under 13.</p>
