@@ -12,64 +12,118 @@
 </head>
 <body>
 <h1>CardKeep – Privacy Policy</h1>
-<p><small>Last updated: 2026-09-24</small></p>
+<p><small>Last updated: 2026-09-27</small></p>
 
-<p><strong>CardKeep</strong> is an offline-first business card scanner: your cards are scanned, stored and searched entirely on your device. This policy explains what the app processes and where it goes.</p>
+<p><strong>CardKeep</strong> is a business card scanner that stores and searches your cards on your own device.
+This policy explains what the app processes, what leaves the device, and how to delete it.</p>
 
-<h2>1. What data we collect</h2>
-<p><strong>We collect nothing.</strong> CardKeep has no account, no login, no advertising SDK and no crash reporting. The developer operates no servers and never receives your data. Everything you scan or type stays on your device.</p>
-<p><strong>One exception you should know about.</strong> CardKeep uses Google ML Kit to read text from card images. The recognition itself runs on your device — card images and their contents are never uploaded. However, the ML Kit library sends anonymous usage and diagnostic information to Google (a device identifier and technical diagnostics, used for analytics). This is not linked to your identity and is not used to track you across apps. We disclose it because the library declares it, and we would rather be accurate than sound absolute.</p>
+<h2>1. Who is responsible</h2>
+<p>CardKeep is developed and published by Alpay Kaan Yıkık (listed on Google Play as AKY-SYSTEM).
+Contact for any privacy question or request: <a href="mailto:kaan.yikik@gmail.com">kaan.yikik@gmail.com</a>.</p>
 
-<h2>2. What stays on your device</h2>
-<p>All information you enter or scan – card images, contact fields (name, title, company, phone, email, address, website, notes), projects/folders – is stored locally on your device only, inside the app's private storage. Nothing is uploaded.</p>
+<h2>2. What the developer collects</h2>
+<p><strong>The developer collects nothing.</strong> CardKeep has no account, no sign-in, no server, no analytics of
+its own, no crash reporting and no advertising. We never receive the cards you scan or anything you type.</p>
 
-<h2>3. Permissions</h2>
+<h2>3. What Google's libraries send</h2>
+<p>Two components made by Google are built into the app and send data to Google themselves. We cannot switch this off,
+so we state it plainly:</p>
 <ul>
-  <li><strong>Camera</strong> – to photograph business cards. Images are processed on-device only.</li>
-  <li><strong>Photos / Media</strong> – so you can import an existing card image from your gallery.</li>
-  <li><strong>Contacts</strong> – only used if you tap "Add to Contacts" to save a scanned card to your phone's address book.</li>
+  <li><strong>Google ML Kit</strong> (text recognition and QR code reading). Recognition runs on your device; card images
+  and the text read from them are <em>not</em> uploaded. According to the privacy manifest Google ships with ML Kit, the
+  library sends Google a device identifier, product interaction, performance data, other diagnostic data, other user
+  content and other data types, used for analytics and app functionality. This data is not linked to your identity and
+  is not used to track you across apps or websites.</li>
+  <li><strong>Google Play Billing</strong> (Android only) and the <strong>App Store</strong> (iOS) process the optional
+  one-time purchase. Google's billing library also sends diagnostic data to Google.</li>
 </ul>
-<p>CardKeep itself contacts no server of ours — there is none. The text-recognition models ship inside the app, so recognition needs no download and works with no connection at all. Network access is used only by components outside our control: ML Kit sends the anonymous diagnostics described in section 1, and the App Store / Google Play handle in-app purchases. The Android INTERNET permission exists for these reasons only.</p>
+<p>This data is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+(and, for App Store purchases, <a href="https://www.apple.com/legal/privacy/">Apple's</a>). We have no access to it.</p>
 
-<h2>4. In-app purchases</h2>
-<p>The one-time Pro unlock is processed by the Apple App Store or Google Play. We never receive your payment details. The purchase state is stored locally on your device and can be restored with the Restore Purchases button.</p>
+<h2>4. What stays on your device</h2>
+<p>Card images, contact fields (name, title, company, phone, email, website, address, notes), tags, statuses, reminders
+and projects are stored only inside the app's private storage on your device. The card database and the activity log are
+encrypted (SQLCipher). App data is excluded from iCloud backup on iPhone and from cloud backup and device-to-device
+transfer on Android, so it is not copied off the device with a phone backup.</p>
+<p>The text-recognition models are built into the app, so reading a card needs no download and works offline.
+On Android, the automatic edge-detecting scanner is provided by Google Play services, which may download its scanner
+component the first time you use it; if it is unavailable, you can use the plain camera or pick a photo instead.</p>
 
-<h2>5. Children</h2>
-<p>CardKeep is a general productivity tool and is not directed at children under 13.</p>
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>Camera</strong> – to photograph business cards. Images are processed on the device.</li>
+  <li><strong>Photos</strong> – to import a card image you pick. On Android the system photo picker is used, so the app
+  sees only the photo you choose.</li>
+  <li><strong>Contacts</strong> – only when you tap “Add to Contacts”. On iPhone the app asks once and then only creates
+  the new contact; it never reads your address book. On Android no permission is needed: the phone's own contact editor
+  opens pre-filled and you decide whether to save.</li>
+  <li><strong>Notifications</strong> – only for reminders you set on a card. They are scheduled on the device;
+  there is no push server.</li>
+</ul>
 
-<h2>6. Data export and deletion</h2>
-<p>You can export all your cards as an Excel (.xlsx) or CSV file, or back up a whole project as a ZIP archive, from Export / Backup. You can delete all data from the app at any time from Settings → Reset Data. Uninstalling the app removes all stored data as well.</p>
+<h2>6. In-app purchase</h2>
+<p>The one-time Pro unlock is processed by the App Store or Google Play. We never receive your payment details.
+Whether you own Pro is stored on your device and can be restored with Restore Purchases.</p>
 
-<h2>7. Changes</h2>
-<p>If this policy changes, the updated version will be published at this URL.</p>
+<h2>7. Keeping and deleting your data</h2>
+<p>Your data stays on the device until you delete it.</p>
+<ul>
+  <li>Deleting a card or a project also deletes its images and scheduled reminders.</li>
+  <li><strong>Settings → Reset Data</strong> deletes all projects, cards, card images and reminders, and also the ZIP
+  backups stored inside the app unless you untick that option.</li>
+  <li>If you forget your PIN, the reset on the PIN screen deletes the same data <em>including</em> the ZIP backups stored
+  inside the app.</li>
+  <li>The <strong>activity log</strong> is kept by design, so that there is a record of what was added, changed and
+  deleted. Names, phone numbers and e-mail addresses in it are masked; company names, job titles, websites and project
+  names are stored as entered.</li>
+  <li>Uninstalling the app removes everything, including the activity log.</li>
+</ul>
+<p>Files you exported or shared yourself (Excel, CSV, vCard, ZIP) are outside the app and under your control.
+From Export / Backup you can export a project's cards as Excel (.xlsx), CSV or vCard, or back up a whole project as a
+ZIP archive. A backup can be protected with a password you choose (AES-256-GCM); without a password it is not encrypted,
+and the app warns you before creating it.</p>
+<p>Because nothing reaches us, we hold no copy of your data and cannot retrieve or delete it for you. Data sent by
+Google's libraries (section 3) is kept and deleted by Google under its own policy.</p>
 
-<h2>8. Contact</h2>
-<p>Questions, data requests or privacy concerns:
-<a href="mailto:kaan.yikik@gmail.com">kaan.yikik@gmail.com</a></p>
-<p>We are the data controller for any personal data processed through this app.
-Because the app stores everything on your own device and we operate no servers,
-we hold no copy of your data and cannot retrieve, alter or delete it for you —
-you control it entirely from within the app (section 6). Write to the address
-above with any question about this policy.</p>
+<h2>8. Security</h2>
+<p>Optional 6-digit PIN with automatic lockout after repeated wrong entries, encrypted database, optional backup
+password. On Android the app's screen cannot be captured in screenshots or screen recordings; on iPhone the app is
+blurred in the app switcher.</p>
+
+<h2>9. Children</h2>
+<p>CardKeep is a professional tool for adults and is not directed at children.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes, the updated version will be published at this address with a new date.</p>
 
 <hr />
 
-<h2 lang="tr">Türkçe özet</h2>
-<p lang="tr">CardKeep taradığınız kartvizitleri <strong>yalnızca cihazınızda</strong>
-saklar. Hesap yok, sunucumuz yok, reklam yok. Kart görselleri ve metinleri
-hiçbir yere yüklenmez; metin tanıma uygulamanın içindeki modellerle, internet
-olmadan çalışır.</p>
-<p lang="tr"><strong>Tek istisna:</strong> uygulamanın içindeki Google ML Kit
-kütüphanesi Google'a anonim kullanım ve tanılama verisi gönderir (bir cihaz
-tanımlayıcısı ve teknik ölçümler). Bunu kapatamıyoruz ve kimliğinizle
-ilişkilendirilmez. Kartvizit içerikleriniz bu veriye dahil değildir. Bunu
-gizlemek yerine açıkça yazmayı tercih ediyoruz.</p>
-<p lang="tr">Verilerinizi Dışa Aktar / Yedekle bölümünden Excel, CSV veya
-şifreli ZIP olarak alabilir, Ayarlar &rarr; Verileri Sıfırla ile tamamen
-silebilirsiniz. Uygulamayı kaldırmak da tüm veriyi siler.</p>
-<p lang="tr">Veri sorumlusu biziz; ancak veri yalnızca sizin cihazınızda
-durduğu ve sunucumuz olmadığı için bizde bir kopyası yoktur, sizin adınıza
-erişemez veya silemeyiz. Soru ve talepleriniz için:
-<a href="mailto:kaan.yikik@gmail.com">kaan.yikik@gmail.com</a></p>
+<div lang="tr">
+<h2>Türkçe özet</h2>
+<p><strong>Sorumlu:</strong> CardKeep, Alpay Kaan Yıkık tarafından geliştirilir ve yayımlanır (Google Play'de
+AKY-SYSTEM). İletişim: <a href="mailto:kaan.yikik@gmail.com">kaan.yikik@gmail.com</a></p>
+<p><strong>Geliştirici hiçbir veri toplamaz.</strong> Hesap, sunucu, kendi analitiğimiz, hata raporlama ve reklam yok.
+Taradığınız kartlar ve yazdıklarınız bize hiçbir zaman ulaşmaz.</p>
+<p><strong>Google kütüphaneleri:</strong> Metin tanıma ve QR okuma için uygulamada Google ML Kit bulunur. Tanıma cihazda
+çalışır; kart görselleri ve okunan metin yüklenmez. Ancak kütüphane, Google'ın beyanına göre cihaz tanımlayıcısı, ürün
+etkileşimi, performans ve teşhis verisi ile diğer bazı veri türlerini analiz ve uygulama işlevselliği amacıyla Google'a
+gönderir. Bu veri kimliğinizle ilişkilendirilmez ve sizi izlemek için kullanılmaz. Android'de satın almayı işleyen
+Google Play Faturalandırma kütüphanesi de Google'a teşhis verisi gönderir. Bunları kapatamıyoruz.</p>
+<p><strong>Cihazda kalanlar:</strong> Kart görselleri, kişi bilgileri, etiketler, hatırlatıcılar ve projeler yalnızca
+uygulamanın cihazdaki özel alanında durur; veritabanı ve işlem geçmişi şifrelidir. iCloud yedeğine ve Android bulut
+yedeğine girmez. Android'de kenar algılayan otomatik tarayıcı Google Play hizmetleri tarafından sağlanır ve ilk
+kullanımda bileşenini indirebilir.</p>
+<p><strong>İzinler:</strong> Kamera (kart çekmek için), Fotoğraflar (seçtiğiniz görseli almak için), Kişiler (yalnızca
+“Rehbere Ekle”ye dokunduğunuzda; rehberiniz okunmaz — Android'de izin bile gerekmez, telefonun kendi kişi ekranı açılır),
+Bildirimler (yalnızca kurduğunuz hatırlatıcılar; cihazda zamanlanır).</p>
+<p><strong>Silme:</strong> Kart veya proje silindiğinde görselleri ve hatırlatıcıları da silinir. Ayarlar → Verileri
+Sıfırla tüm projeleri, kartları, görselleri, hatırlatıcıları ve seçeneği kaldırmazsanız uygulama içindeki ZIP
+yedekleri siler. PIN'i unuttuğunuzda yapılan sıfırlama uygulama içindeki yedekleri de siler. İşlem geçmişi bilinçli
+olarak saklanır: içindeki ad, telefon ve e-postalar maskelidir; firma adı, unvan, web sitesi ve proje adları girildiği
+gibi durur. Uygulamayı kaldırmak işlem geçmişi dahil her şeyi siler. Dışa aktarıp paylaştığınız dosyalar sizin
+kontrolünüzdedir. Verileriniz bize ulaşmadığı için sizin adınıza erişemez veya silemeyiz.</p>
+<p><strong>Yedek:</strong> Excel, CSV, vCard veya ZIP yedek (isteğe bağlı parolayla AES-256-GCM şifreli) olarak
+alabilirsiniz.</p>
+</div>
 </body>
 </html>
