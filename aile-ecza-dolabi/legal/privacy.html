@@ -7,14 +7,14 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Web copy of assets/legal/privacy.tr.md + privacy.en.md (version 1.2).
+<!-- Web copy of assets/legal/privacy.tr.md + privacy.en.md (version 1.4).
      Publisher details are the values of
      lib/features/settings/domain/legal_config.dart: keep both in sync. -->
 <nav><a href="#tr" lang="tr">Türkçe</a> · <a href="#en" lang="en">English</a> · <a href="index.html">Aile Ecza Dolabı</a></nav>
 <main>
 <article id="tr" lang="tr">
 <h1>Gizlilik Politikası</h1>
-<p><strong>Sürüm 1.2 — 2026-10-26</strong></p>
+<p><strong>Sürüm 1.4 — 2026-10-26</strong></p>
 <p>Aile Ecza Dolabı ("Uygulama"), Alpay Kaan YIKIK ("biz") tarafından yayımlanır. Bu politika, Uygulamayı kullanırken hangi verilerin nerede ve nasıl işlendiğini açıklar. Kişisel Verilerin Korunması Kanunu (KVKK) kapsamındaki aydınlatma metni ve açık rıza metni Uygulamada ayrıca sunulur.</p>
 <h2>Kısaca</h2>
 <ul>
@@ -34,17 +34,17 @@
 <li><strong>Rıza kayıtları:</strong> hangi rızayı hangi metin sürümüyle ve ne zaman verdiğiniz veya geri aldığınız.</li>
 <li><strong>Uygulama ayarları:</strong> dil, bildirim tercihleri ve benzeri seçimler.</li>
 <li><strong>Cihaz ve aile anahtarları:</strong> Uygulamanın ürettiği rastgele cihaz kimliği, veritabanı şifreleme anahtarı ve (aile eşitlemesini kullanırsanız) aile anahtarı. Bunlar işletim sisteminin güvenli deposunda (Android Keystore / iOS Anahtar Zinciri) tutulur.</li>
-<li><strong>Abonelik durumu:</strong> Aile Lisansı'nın etkin olup olmadığı, uygulama mağazasının bildirdiği bilgiye göre cihazda doğrulanır. Ödeme bilgilerinizi Apple veya Google işler; biz göremeyiz.</li>
+<li><strong>Abonelik durumu:</strong> Aile Lisansı'nın etkin olup olmadığı, uygulama mağazasının bildirdiği bilgiye göre cihazda doğrulanır. Ödeme bilgilerinizi Apple veya Google işler; biz göremeyiz. Google Play'de Aile Lisansının geçerlilik tarihi, aile eşitlemesinde eşleştirdiğiniz aile cihazlarına ve aile dosyasına eklenir; iPhone ve iPad'de lisans bilgisi cihazdan çıkmaz.</li>
 </ul>
 <h2>3. Kamera</h2>
 <p>İlaç kutusundaki barkod ve karekod ile aileye katılırken okutulan davet QR kodu, Uygulamanın içindeki açık kaynaklı bir okuyucuyla (zxing-cpp) tamamen cihazınızda çözülür. Görüntüler kaydedilmez ve cihazdan gönderilmez; yalnızca okunan kod kullanılır. Tarama için hiçbir harici hizmet kullanılmaz. Kamera yalnızca siz tarama başlattığınızda açılır; izin vermezseniz ilaçları elle ekleyebilirsiniz. Uygulama mikrofonu ve fotoğraf arşivinizi kullanmaz.</p>
 <h2>4. Verilerin saklandığı yer ve güvenlik</h2>
-<p>Tüm kişisel verileriniz cihazınızda, SQLCipher ile (AES-256) şifrelenmiş bir veritabanında tutulur. Şifreleme anahtarı cihazınızın güvenli deposundadır, bu cihaza bağlıdır ve cihazdan çıkmaz. Veritabanı ve anahtarı cihaz yedeklerine (iCloud, iTunes/Finder veya Google yedekleri) dahil edilmez; bu nedenle başka cihazlara ya da buluta kopyalanmaz. Uygulamayla birlikte gelen ilaç listesi, Türkiye İlaç ve Tıbbi Cihaz Kurumu'nun (TİTCK) herkese açık verisidir, yalnızca ilaç adını yazarken öneri göstermek için kullanılır ve kişisel veri içermez.</p>
+<p>Tüm kişisel verileriniz cihazınızda, SQLCipher ile (AES-256) şifrelenmiş bir veritabanında tutulur; zamanlanmış hatırlatmaların bildirim metinleri için 10. maddeye bakın. Şifreleme anahtarı cihazınızın güvenli deposundadır, bu cihaza bağlıdır ve cihazdan çıkmaz. Veritabanı ve anahtarı cihaz yedeklerine (iCloud, iTunes/Finder veya Google yedekleri) dahil edilmez; bu nedenle başka cihazlara ya da buluta kopyalanmaz. Uygulamayla birlikte gelen ilaç listesi, Türkiye İlaç ve Tıbbi Cihaz Kurumu'nun (TİTCK) herkese açık verisidir, yalnızca ilaç adını yazarken öneri göstermek için kullanılır ve kişisel veri içermez.</p>
 <p>Cihazınızın ekran kilidini kullanmanızı öneririz: telefonunuzun kilidi açıkken Uygulamadaki bilgiler görülebilir.</p>
 <h2>5. Verilerin paylaşılması ve aktarılması</h2>
 <ul>
 <li>Verilerinizi üçüncü kişilere <strong>aktarmayız</strong>, satmayız ve yurt dışına göndermeyiz.</li>
-<li><strong>Aile eşitlemesi (isteğe bağlı):</strong> Açık rızanızla, yalnızca kendi eşleştirdiğiniz aile cihazları arasında, ev Wi-Fi ağınız üzerinden doğrudan veri alışverişi yapılır. Uygulama bu amaçla yalnızca yerel ağ adreslerine bağlanır ve yalnızca yerel ağdan gelen bağlantıları kabul eder. Veriler AES-256-GCM ile uçtan uca şifrelenir; aile anahtarı yalnızca yüz yüze gösterilen bir QR kod ile paylaşılır. Arada bir sunucu yoktur.</li>
+<li><strong>Aile eşitlemesi (isteğe bağlı):</strong> Açık rızanızla, yalnızca kendi eşleştirdiğiniz aile cihazları arasında, ev Wi-Fi ağınız üzerinden doğrudan veri alışverişi yapılır. Uygulama bu amaçla yalnızca yerel ağ adreslerine bağlanır ve yalnızca yerel ağdan gelen bağlantıları kabul eder. Veriler AES-256-GCM ile uçtan uca şifrelenir; aile anahtarı, ailedeki bir cihazda gösterilen davet QR kodu ya da davet bağlantısıyla paylaşılır; bunları yalnızca kendi ailenizle, mümkünse yüz yüze paylaşın. Arada bir sunucu yoktur.</li>
 <li><strong>Dışa aktarma dosyaları:</strong> Şifreli bir .aed dosyası oluşturup paylaştığınızda, dosyayı nereye göndereceğinize (ör. e-posta, mesajlaşma, bulut depolama) siz karar verirsiniz; o hizmetlerin kendi gizlilik kuralları geçerlidir. Aile dosyası yalnızca aile anahtarıyla, kişisel yedek yalnızca sizin belirlediğiniz parolayla açılabilir. Parolanızı saklamayız; unutursanız yedek açılamaz. Dosyanın adında ve başlığında cihaz adı ile oluşturma tarihi şifresiz olarak yer alabilir.</li>
 <li><strong>Dış bağlantılar:</strong> Yasal metinlerdeki bağlantılara, e-posta adresine veya mağazanın abonelik sayfasına dokunduğunuzda ilgili uygulama (tarayıcı, e-posta, mağaza) açılır; Uygulama bu bağlantılarla kendisi veri göndermez.</li>
 <li><strong>Uygulama mağazaları:</strong> Uygulamanın indirilmesi ve abonelik ödemeleri Apple App Store veya Google Play tarafından, onların gizlilik politikalarına göre işlenir. Android'de abonelik için kullanılan Google Play Faturalandırma bileşeni, ödeme işlemlerinin işleyişine ilişkin teknik verileri Google'a gönderebilir; bu, Google'ın sorumluluğundadır ve sağlık verilerinizi içermez.</li>
@@ -55,7 +55,7 @@
 <p>Verileriniz, siz silene kadar cihazınızda kalır. Uygulamayı cihazınızdan kaldırdığınızda Uygulamanın veritabanı da silinir; iOS'un kaldırmadan sonra Anahtar Zinciri'nde tuttuğu anahtarlar, Uygulama yeniden yüklendiğinde silinir. Sağlık verisi rızanızı geri alırsanız Uygulama, rızanızı yeniden verene ya da tüm verileri silene kadar yeni sağlık verisi kaydetmez ve tüm hatırlatıcıları iptal eder. Rıza kayıtları, rızanızın ispatı için siz tüm verileri silene kadar cihazda tutulur.</p>
 <h2>8. Silme ve haklarınız</h2>
 <ul>
-<li><strong>Tüm verileri silmek için:</strong> Ayarlar › Veri yönetimi › Tüm verileri sil.</li>
+<li><strong>Tüm verileri silmek için:</strong> Ayarlar › Veri yönetimi › Tüm verileri sil. Bu işlem Uygulamadaki tüm kayıtları ve aile anahtarını siler, cihaz kimliğini yenisiyle değiştirir. Aile Lisansının mağaza kaydı (ürün, bitiş tarihi, işlem numarası) cihazda kalır; abonelik mağaza hesabınıza bağlıdır ve bu işlemle iptal edilmez. Veritabanı şifreleme anahtarı da cihazda kalır, ancak silinen kayıtlara erişim sağlamaz.</li>
 <li><strong>Rızanızı geri almak için:</strong> Ayarlar › Rızalarım.</li>
 <li>Bilgilerinizi Uygulama içinde görüntüleyebilir, düzeltebilir ve silebilirsiniz.</li>
 <li>KVKK'nın 11. maddesindeki haklarınız ve başvuru yolları KVKK Aydınlatma Metni'nde açıklanmıştır. Verileriniz yalnızca cihazınızda bulunduğundan, onlara bizim erişimimiz yoktur.</li>
@@ -64,6 +64,7 @@
 <p>Uygulama yetişkin kullanıcılar içindir. Çocuklara ait profiller ancak velisi veya yasal temsilcisi tarafından oluşturulabilir. Başka bir kişi adına profil eklerken, o kişinin bilgisi ve onayıyla ya da velisi/yasal temsilcisi olarak eklediğinizi beyan edersiniz.</p>
 <h2>10. Bildirimler</h2>
 <p>Hatırlatma bildirimleri varsayılan olarak ilaç adını göstermez. Ayarlardan ilaç adını göstermeyi açarsanız, kilit ekranınızı gören kişiler bu bilgiyi okuyabilir.</p>
+<p>Hatırlatmaların zamanında gösterilebilmesi için, planlanan bildirimlerin başlığı ve metni (profil adı; ilaç adı gösterimi açıksa ilaç adı ve doz) işletim sisteminin bildirim zamanlayıcısında tutulur. Bu kayıtlar Uygulamanın şifreli veritabanının dışındadır, ancak cihazdan çıkmaz; hatırlatma iptal edildiğinde ya da Uygulama kaldırıldığında silinir.</p>
 <h2>11. Değişiklikler</h2>
 <p>Bu politikayı güncellersek sürüm numarasını ve tarihini değiştirir, önemli değişiklikleri Uygulamada duyururuz.</p>
 <h2>12. İletişim</h2>
@@ -72,7 +73,7 @@
 
 <article id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p><strong>Version 1.2 — 2026-10-26</strong></p>
+<p><strong>Version 1.4 — 2026-10-26</strong></p>
 <p>Aile Ecza Dolabı (Family Medicine Cabinet, the "App") is published by Alpay Kaan YIKIK ("we"). This policy explains which data the App processes, where and how. The privacy notice and the explicit consent text required by the Turkish Personal Data Protection Law (KVKK) are provided separately in the App.</p>
 <h2>In short</h2>
 <ul>
@@ -92,17 +93,17 @@
 <li><strong>Consent records:</strong> which consent you gave or withdrew, under which text version and when.</li>
 <li><strong>App settings:</strong> language, notification preferences and similar choices.</li>
 <li><strong>Device and family keys:</strong> a random device ID generated by the App, the database encryption key and, if you use family sync, the family key. These are kept in the operating system's secure storage (Android Keystore / iOS Keychain).</li>
-<li><strong>Subscription status:</strong> whether the Family licence is active is verified on the device using information from the app store. Apple or Google process your payment details; we cannot see them.</li>
+<li><strong>Subscription status:</strong> whether the Family licence is active is verified on the device using information from the app store. Apple or Google process your payment details; we cannot see them. On Google Play, the Family licence's expiry date is included when you sync with paired family devices and in the family file; on iPhone and iPad, licence information does not leave the device.</li>
 </ul>
 <h2>3. Camera</h2>
 <p>Barcodes and 2D codes on medicine boxes, and the invitation QR code scanned when you join your family, are decoded entirely on your device by an open-source reader built into the App (zxing-cpp). Images are not stored and are not sent anywhere; only the decoded code is used. No external service is used for scanning. The camera only opens when you start a scan; without camera permission you can add medicines manually. The App does not use the microphone or your photo library.</p>
 <h2>4. Where data is stored and security</h2>
-<p>All your personal data is kept on your device in a database encrypted with SQLCipher (AES-256). The encryption key is stored in your device's secure storage, is bound to this device and never leaves it. The database and its key are not included in device backups (iCloud, iTunes/Finder or Google backups), so they are not copied to other devices or to the cloud. The medicine list shipped with the App is public data of the Turkish Medicines and Medical Devices Agency (TİTCK); it is only used to suggest names while you type and contains no personal data.</p>
+<p>All your personal data is kept on your device in a database encrypted with SQLCipher (AES-256); for the text of scheduled reminder notifications, see section 10. The encryption key is stored in your device's secure storage, is bound to this device and never leaves it. The database and its key are not included in device backups (iCloud, iTunes/Finder or Google backups), so they are not copied to other devices or to the cloud. The medicine list shipped with the App is public data of the Turkish Medicines and Medical Devices Agency (TİTCK); it is only used to suggest names while you type and contains no personal data.</p>
 <p>We recommend using a screen lock: while your phone is unlocked, the information in the App can be seen.</p>
 <h2>5. Sharing and transfers</h2>
 <ul>
 <li>We <strong>do not transfer</strong> your data to third parties, do not sell it and do not send it abroad.</li>
-<li><strong>Family sync (optional):</strong> with your explicit consent, data is exchanged directly between family devices that you pair yourself, over your home Wi-Fi network. For this the App only connects to local-network addresses and only accepts connections from the local network. Data is end-to-end encrypted with AES-256-GCM; the family key is shared only through a QR code shown in person. There is no server in between.</li>
+<li><strong>Family sync (optional):</strong> with your explicit consent, data is exchanged directly between family devices that you pair yourself, over your home Wi-Fi network. For this the App only connects to local-network addresses and only accepts connections from the local network. Data is end-to-end encrypted with AES-256-GCM; the family key is shared through the invitation QR code or invitation link shown on a family device; share these only with your own family, in person where possible. There is no server in between.</li>
 <li><strong>Export files:</strong> when you create and share an encrypted .aed file, you decide where it goes (e.g. email, messaging, cloud storage); those services' own privacy rules apply. A family file can only be opened with the family key, a personal backup only with the password you set. We do not store your password; if you forget it, the backup cannot be opened. The file name and header may show the device name and creation date unencrypted.</li>
 <li><strong>External links:</strong> when you tap a link in the legal texts, the email address or the store's subscription page, the matching app (browser, email, store) opens; the App itself sends no data through these links.</li>
 <li><strong>App stores:</strong> downloads and subscription payments are handled by the Apple App Store or Google Play under their own privacy policies. On Android, the Google Play Billing component used for subscriptions may send Google technical data about how payment operations work; this is Google's responsibility and contains none of your health data.</li>
@@ -113,7 +114,7 @@
 <p>Your data stays on your device until you delete it. Uninstalling the App also deletes its database; keys that iOS keeps in the Keychain after uninstalling are deleted the next time the App is installed. If you withdraw your health data consent, the App stores no new health data and cancels all reminders until you give your consent again or delete all data. Consent records are kept on the device as proof of your consent until you delete all data.</p>
 <h2>8. Deletion and your rights</h2>
 <ul>
-<li><strong>To delete all data:</strong> Settings › Data management › Delete all data.</li>
+<li><strong>To delete all data:</strong> Settings › Data management › Delete all data. This deletes every record in the App and the family key, and replaces the device ID with a new one. The store record of the Family licence (product, expiry date, transaction number) stays on the device; the subscription belongs to your store account and is not cancelled by this. The database encryption key also stays on the device but gives no access to the deleted records.</li>
 <li><strong>To withdraw consent:</strong> Settings › My consents.</li>
 <li>You can view, correct and delete your information in the App.</li>
 <li>Your rights under Article 11 of the KVKK and how to exercise them are explained in the KVKK privacy notice. As your data is only on your device, we have no access to it.</li>
@@ -122,6 +123,7 @@
 <p>The App is intended for adult users. Profiles for children may only be created by their parent or legal guardian. When you add someone else's profile, you confirm that you do so with that person's knowledge and consent, or as their parent / legal guardian.</p>
 <h2>10. Notifications</h2>
 <p>By default, reminder notifications do not show the medicine name. If you enable medicine names in Settings, people who can see your lock screen may read them.</p>
+<p>So that reminders can appear on time, the title and text of scheduled notifications (the profile name; if medicine names are shown, also the medicine name and dose) are kept in the operating system's notification scheduler. These entries are outside the App's encrypted database but do not leave the device; they are deleted when the reminder is cancelled or the App is uninstalled.</p>
 <h2>11. Changes</h2>
 <p>If we update this policy, we change its version number and date and announce important changes in the App.</p>
 <h2>12. Contact</h2>
